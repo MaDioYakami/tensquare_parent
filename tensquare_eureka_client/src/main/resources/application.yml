@@ -1,0 +1,8 @@
+server:
+  port: 8088
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:6868/eureka/
+  instance:
+    prefer-ip-address: true #用来支持跨域，建议每个都开
