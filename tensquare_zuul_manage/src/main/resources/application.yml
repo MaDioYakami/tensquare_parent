@@ -1,11 +1,17 @@
 server:
-  port: 8088
+  port: 8081
 eureka:
   client:
     service-url:
       defaultZone: http://127.0.0.1:6868/eureka/
   instance:
     prefer-ip-address: true #用来支持跨域，建议每个都开
+
 spring:
   application:
-    name: eurekaClient
+    name: zuulManage
+zuul:
+  routes:
+    eurekaClient:
+      path: /eurekaClient
+      serviceId: eurekaClient

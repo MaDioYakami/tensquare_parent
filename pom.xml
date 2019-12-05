@@ -12,6 +12,7 @@
         <module>tensquare_base</module>
         <module>tensquare_eureka</module>
         <module>tensquare_eureka_client</module>
+        <module>tensquare_zool_manage</module>
     </modules>
     <packaging>pom</packaging>
     <name>tensquare_parent</name>
